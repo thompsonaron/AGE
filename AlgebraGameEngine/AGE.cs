@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 
-
 public partial class AGE
 {
 	public delegate void GameplayUpdate();
 	public GameplayUpdate gameplayUpdate;
-
 	public List<GameObject> gameObjects = new List<GameObject>();
 
 	public void init()
@@ -21,7 +19,6 @@ public partial class AGE
 			render();
 		}
 	}
-
 }
 
 public class GameObject

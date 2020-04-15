@@ -3,16 +3,22 @@
 public partial class AGE
 {
     char[][] consoleScreen;
-    char[][] clearScreen;
     public int displayWidth = 30;
     public int displayHeight = 30;
 
     // renderSetup has to run before render
     public void render()
     {
-        renderSetup();
-        consoleScreen = (char[][])clearScreen.Clone();
+        // "clear" screen
+        for (int i = 0; i < displayHeight; i++)
+        {
+            for (int j = 0; j < displayWidth; j++)
+            {
+                consoleScreen[i][j] = ' ';
+            }
+        }
 
+        // object input
         for (int i = 0; i < gameObjects.Count; i++)
         {
             consoleScreen[gameObjects[i].position.x][gameObjects[i].position.y] = gameObjects[i].charRenderer;
@@ -30,14 +36,10 @@ public partial class AGE
 
     public void renderSetup()
     {
-        clearScreen = new char[displayHeight][];
+        consoleScreen = new char[displayHeight][];
         for (int i = 0; i < displayHeight; i++)
         {
-            clearScreen[i] = new char[30];
-            for (int j = 0; j < displayWidth; j++)
-            {
-                clearScreen[i][j] = ' ';
-            }
+            consoleScreen[i] = new char[30];         
         }
     }
 }

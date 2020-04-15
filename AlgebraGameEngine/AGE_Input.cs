@@ -25,12 +25,10 @@ public partial class AGE
 			{
 				if (!k.down && !k.hold)
 				{
-					//Console.WriteLine("123");
 					k.down = true;
 				}
 				else if (k.down)
 				{
-					//Console.WriteLine("123");
 					k.down = false;
 					k.hold = true;
 				}
