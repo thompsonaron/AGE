@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgebraGameEngine", "AlgebraGameEngine\AlgebraGameEngine.csproj", "{EE646783-9582-4515-887D-ED2C0A0F206B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{3500ABA8-5E76-452C-9705-2EC368ACDA68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheGame", "ConsoleApp1\TheGame.csproj", "{3500ABA8-5E76-452C-9705-2EC368ACDA68}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
