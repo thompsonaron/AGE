@@ -24,9 +24,9 @@ public partial class AGE
             consoleScreen[gameObjects[i].position.x][gameObjects[i].position.y] = gameObjects[i].charRenderer;
         }
 
-        for (int i = 0; i < 30; i++)
+        for (int i = 0; i < displayHeight; i++)
         {
-            for (int j = 0; j < 30; j++)
+            for (int j = 0; j < displayWidth; j++)
             {
                 Console.SetCursorPosition(i, j);
                 Console.Write(consoleScreen[i][j]);
@@ -39,7 +39,7 @@ public partial class AGE
         consoleScreen = new char[displayHeight][];
         for (int i = 0; i < displayHeight; i++)
         {
-            consoleScreen[i] = new char[30];         
+            consoleScreen[i] = new char[displayWidth];         
         }
     }
 }
